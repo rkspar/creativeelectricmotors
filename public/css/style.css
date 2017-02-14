@@ -731,7 +731,7 @@ tbody {
   background: url("../images/background-img-6.jpg") 50% 0px no-repeat;
 }
 .background-img-7 {
-  background: url("../images/creative1.png") 50% 0px no-repeat;
+  background: url("../images/nyc.jpg") 50% 0px no-repeat;
 }
 .background-img-8 {
   background: url("../images/background-img-8.jpg") 50% 0px no-repeat;
@@ -771,7 +771,7 @@ tbody {
   border-bottom: 1px solid #eaeaea;
 }
 .dark-bg {
-  background-color: #FDB813;
+  background-color: #000000;
   color: #cdcdcd;
 }
 .dark-bg + .dark-bg:not(.image-box):not(.full-image-container):not(.full-text-container):not(.full-width-section) {

@@ -93,26 +93,25 @@
 								<div class="header-top-first clearfix">
 									<ul class="social-links circle small clearfix hidden-xs">
 										<li class="twitter"><a target="_blank" href="http://www.twitter.com"><i class="fa fa-twitter"></i></a></li>
-										<li class="skype"><a target="_blank" href="http://www.skype.com"><i class="fa fa-skype"></i></a></li>
+										
 										<li class="linkedin"><a target="_blank" href="http://www.linkedin.com"><i class="fa fa-linkedin"></i></a></li>
-										<li class="googleplus"><a target="_blank" href="http://plus.google.com"><i class="fa fa-google-plus"></i></a></li>
+										
 										<li class="youtube"><a target="_blank" href="http://www.youtube.com"><i class="fa fa-youtube-play"></i></a></li>
-										<li class="flickr"><a target="_blank" href="http://www.flickr.com"><i class="fa fa-flickr"></i></a></li>
+										
 										<li class="facebook"><a target="_blank" href="http://www.facebook.com"><i class="fa fa-facebook"></i></a></li>
-										<li class="pinterest"><a target="_blank" href="http://www.pinterest.com"><i class="fa fa-pinterest"></i></a></li>
+										
 									</ul>
 									<div class="social-links hidden-lg hidden-md hidden-sm circle small">
 										<div class="btn-group dropdown">
 											<button type="button" class="btn dropdown-toggle" data-toggle="dropdown"><i class="fa fa-share-alt"></i></button>
 											<ul class="dropdown-menu dropdown-animation">
 												<li class="twitter"><a target="_blank" href="http://www.twitter.com"><i class="fa fa-twitter"></i></a></li>
-												<li class="skype"><a target="_blank" href="http://www.skype.com"><i class="fa fa-skype"></i></a></li>
-												<li class="linkedin"><a target="_blank" href="http://www.linkedin.com"><i class="fa fa-linkedin"></i></a></li>
-												<li class="googleplus"><a target="_blank" href="http://plus.google.com"><i class="fa fa-google-plus"></i></a></li>
-												<li class="youtube"><a target="_blank" href="http://www.youtube.com"><i class="fa fa-youtube-play"></i></a></li>
-												<li class="flickr"><a target="_blank" href="http://www.flickr.com"><i class="fa fa-flickr"></i></a></li>
-												<li class="facebook"><a target="_blank" href="http://www.facebook.com"><i class="fa fa-facebook"></i></a></li>
-												<li class="pinterest"><a target="_blank" href="http://www.pinterest.com"><i class="fa fa-pinterest"></i></a></li>
+										
+										<li class="linkedin"><a target="_blank" href="http://www.linkedin.com"><i class="fa fa-linkedin"></i></a></li>
+										
+										<li class="youtube"><a target="_blank" href="http://www.youtube.com"><i class="fa fa-youtube-play"></i></a></li>
+										
+										<li class="facebook"><a target="_blank" href="http://www.facebook.com"><i class="fa fa-facebook"></i></a></li>
 											</ul>
 										</div>
 									</div>
@@ -203,7 +202,7 @@
 											</div>
 
 											<!-- Collect the nav links, forms, and other content for toggling -->
-											<div class="collapse navbar-collapse" id="navbar-collapse-1">
+											<div class="collapse navbar-collapse scrollspy smooth-scroll" id="navbar-collapse-1">
 												<!-- main-menu -->
 												<ul class="nav navbar-nav ">
 
@@ -213,12 +212,14 @@
 														<a href="index.html"><b>Home</b></a>
 														
 													</li>
-													<li><a href=""><b>About</b></a></li>
-													<li><a href=""><b>Creative Motors</b></a></li>
+													<li><a href="#about"><b>About</b></a></li>
 													<li>
-														<a href=""><b>Shop</b></a>
+														<a href="#shop"><b>Shop</b></a>
 													</li>
-													<li><a href=""><b>C.E.M App</b></a></li>
+													<li>
+														<a href="#why"><b>Why Creative Electric Motors?</b></a>
+													</li>
+													<li><a href="cem-app.html"><b>C.E.M App</b></a></li>
 
 													<!-- mega-menu end -->
 													
@@ -317,7 +318,7 @@
 			<div id="page-start"></div>
 
 <!-- ================ -->
-			<section class="section light-gray-bg clearfix">
+			<section id="shop"class="section light-gray-bg clearfix">
 				<center><img src="images/logocreative.png" width="300px"></center>
 				<div class="container">
 					<div class="row">
@@ -376,7 +377,7 @@
 													<span class="price"><del>$2,199.00</del> $2,059.00</span>
 													<p class="small"> </p>
 													Creative Electric Motors is created for anyone who wants to enjoy the style and the facility to drive a unique bike without gas, to preserve the world and the bio environment!
-													<div id='product-component-edd6f56dd96'></div>
+													<div id='product-component-6f41161cdab'></div>
 <script type="text/javascript">
 /*<![CDATA[*/
 
@@ -410,7 +411,7 @@
     ShopifyBuy.UI.onReady(client).then(function (ui) {
       ui.createComponent('product', {
         id: [9868819012],
-        node: document.getElementById('product-component-edd6f56dd96'),
+        node: document.getElementById('product-component-6f41161cdab'),
         moneyFormat: '%24%7B%7Bamount%7D%7D',
         options: {
   "product": {
@@ -440,6 +441,9 @@
       },
       "button": {
         "background-color": "#51c512",
+        "font-size": "14px",
+        "padding-top": "15px",
+        "padding-bottom": "15px",
         ":hover": {
           "background-color": "#49b110"
         },
@@ -447,14 +451,13 @@
           "background-color": "#49b110"
         }
       },
-      "title": {
-        "font-size": "26px"
-      },
-      "price": {
-        "font-size": "18px"
+      "quantityInput": {
+        "font-size": "14px",
+        "padding-top": "15px",
+        "padding-bottom": "15px"
       },
       "compareAt": {
-        "font-size": "15px"
+        "font-size": "12px"
       }
     }
   },
@@ -463,8 +466,14 @@
       "button": true
     },
     "styles": {
+      "cart": {
+        "background-color": "#000000"
+      },
       "button": {
         "background-color": "#51c512",
+        "font-size": "14px",
+        "padding-top": "15px",
+        "padding-bottom": "15px",
         ":hover": {
           "background-color": "#49b110"
         },
@@ -472,8 +481,38 @@
           "background-color": "#49b110"
         }
       },
+      "title": {
+        "color": "#2bce00"
+      },
       "footer": {
-        "background-color": "#ffffff"
+        "background-color": "#000000"
+      },
+      "header": {
+        "color": "#2bce00"
+      },
+      "lineItems": {
+        "color": "#2bce00"
+      },
+      "subtotalText": {
+        "color": "#2bce00"
+      },
+      "subtotal": {
+        "color": "#2bce00"
+      },
+      "notice": {
+        "color": "#2bce00"
+      },
+      "currency": {
+        "color": "#2bce00"
+      },
+      "close": {
+        ":hover": {
+          "color": "#2bce00"
+        },
+        "color": "#2bce00"
+      },
+      "emptyCart": {
+        "color": "#2bce00"
       }
     }
   },
@@ -494,12 +533,20 @@
       },
       "button": {
         "background-color": "#51c512",
+        "font-size": "14px",
+        "padding-top": "15px",
+        "padding-bottom": "15px",
         ":hover": {
           "background-color": "#49b110"
         },
         ":focus": {
           "background-color": "#49b110"
         }
+      },
+      "quantityInput": {
+        "font-size": "14px",
+        "padding-top": "15px",
+        "padding-bottom": "15px"
       }
     }
   },
@@ -513,6 +560,9 @@
         ":focus": {
           "background-color": "#49b110"
         }
+      },
+      "count": {
+        "font-size": "14px"
       }
     }
   },
@@ -522,6 +572,34 @@
         "@media (min-width: 601px)": {
           "margin-left": "-20px"
         }
+      }
+    }
+  },
+  "lineItem": {
+    "styles": {
+      "variantTitle": {
+        "color": "#2bce00"
+      },
+      "title": {
+        "color": "#2bce00"
+      },
+      "price": {
+        "color": "#2bce00"
+      },
+      "quantity": {
+        "color": "#2bce00"
+      },
+      "quantityIncrement": {
+        "color": "#2bce00",
+        "border-color": "#2bce00"
+      },
+      "quantityDecrement": {
+        "color": "#2bce00",
+        "border-color": "#2bce00"
+      },
+      "quantityInput": {
+        "color": "#2bce00",
+        "border-color": "#2bce00"
       }
     }
   }
@@ -778,7 +856,7 @@
 											<ol class="carousel-indicators top">
 												<li data-target="#carousel-portfolio" data-slide-to="0" class="active"></li>
 												<li data-target="#carousel-portfolio" data-slide-to="1"></li>
-												<li data-target="#carousel-portfolio" data-slide-to="2"></li>
+												
 												
 												
 												
@@ -786,8 +864,15 @@
 													<div class="carousel-inner" role="listbox">
 												<div class="item active">
 													<div class="overlay-container">
-														<img src="images/graf.png" alt="">
-														<a class="overlay-link popup-img-single" href="images/graf.png"><i class="fa fa-search-plus"></i></a>
+														<img src="images/chopper.jpg" alt="">
+														<a class="overlay-link popup-img-single" href="images/chopper.jpg"><i class="fa fa-search-plus"></i></a>
+														
+													</div>
+												</div>
+												<div class="item">
+													<div class="overlay-container">
+														<img src="images/chopper2.jpg" alt="">
+														<a class="overlay-link popup-img-single" href="images/chopper2.jpg"><i class="fa fa-search-plus"></i></a>
 														
 													</div>
 												</div>
@@ -805,7 +890,658 @@
 													<span class="price"> $2,065.00</span>
 													<p class="small"> </p>
 													Creative Electric Motors is created for anyone who wants to enjoy the style and the facility to drive a unique bike without gas, to preserve the world and the bio environment!
+													<div id='product-component-914b02fea2c'></div>
+<script type="text/javascript">
+/*<![CDATA[*/
+
+(function () {
+  var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+  if (window.ShopifyBuy) {
+    if (window.ShopifyBuy.UI) {
+      ShopifyBuyInit();
+    } else {
+      loadScript();
+    }
+  } else {
+    loadScript();
+  }
+
+  function loadScript() {
+    var script = document.createElement('script');
+    script.async = true;
+    script.src = scriptURL;
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+    script.onload = ShopifyBuyInit;
+  }
+
+  function ShopifyBuyInit() {
+    var client = ShopifyBuy.buildClient({
+      domain: 'creative-electric-motors.myshopify.com',
+      apiKey: 'c512b33a62bb2bf65e735c6735fba00c',
+      appId: '6',
+    });
+
+    ShopifyBuy.UI.onReady(client).then(function (ui) {
+      ui.createComponent('product', {
+        id: [9892732292],
+        node: document.getElementById('product-component-914b02fea2c'),
+        moneyFormat: '%24%7B%7Bamount%7D%7D',
+        options: {
+  "product": {
+    "buttonDestination": "modal",
+    "variantId": "all",
+    "width": "240px",
+    "contents": {
+      "img": false,
+      "title": false,
+      "variantTitle": false,
+      "options": false,
+      "price": false,
+      "description": false,
+      "buttonWithQuantity": false,
+      "quantity": false
+    },
+    "text": {
+      "button": "VIEW CHOPPER"
+    },
+    "styles": {
+      "product": {
+        "@media (min-width: 601px)": {
+          "max-width": "100%",
+          "margin-left": "0",
+          "margin-bottom": "50px"
+        }
+      },
+      "button": {
+        "background-color": "#51c512",
+        ":hover": {
+          "background-color": "#49b110"
+        },
+        ":focus": {
+          "background-color": "#49b110"
+        }
+      },
+      "compareAt": {
+        "font-size": "12px"
+      }
+    }
+  },
+  "cart": {
+    "contents": {
+      "button": true
+    },
+    "styles": {
+      "button": {
+        "background-color": "#51c512",
+        ":hover": {
+          "background-color": "#49b110"
+        },
+        ":focus": {
+          "background-color": "#49b110"
+        }
+      },
+      "footer": {
+        "background-color": "#ffffff"
+      }
+    }
+  },
+  "modalProduct": {
+    "contents": {
+      "variantTitle": false,
+      "buttonWithQuantity": true,
+      "button": false,
+      "quantity": false
+    },
+    "styles": {
+      "product": {
+        "@media (min-width: 601px)": {
+          "max-width": "100%",
+          "margin-left": "0px",
+          "margin-bottom": "0px"
+        }
+      },
+      "button": {
+        "background-color": "#51c512",
+        ":hover": {
+          "background-color": "#49b110"
+        },
+        ":focus": {
+          "background-color": "#49b110"
+        }
+      }
+    }
+  },
+  "toggle": {
+    "styles": {
+      "toggle": {
+        "background-color": "#51c512",
+        ":hover": {
+          "background-color": "#49b110"
+        },
+        ":focus": {
+          "background-color": "#49b110"
+        }
+      }
+    }
+  },
+  "productSet": {
+    "styles": {
+      "products": {
+        "@media (min-width: 601px)": {
+          "margin-left": "-20px"
+        }
+      }
+    }
+  }
+}
+      });
+    });
+  }
+})();
+/*]]>*/
+</script>
+		
+													</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-md-3 col-sm-6 masonry-grid-item">
+											<div class="listing-item white-bg bordered mb-20">
+												<div class="overlay-container">
+													<div id="carousel-portfolio" class="carousel slide" data-ride="carousel">
+											<!-- Indicators -->
+											<ol class="carousel-indicators top">
+												<li data-target="#carousel-portfolio" data-slide-to="0" class="active"></li>
+												<li data-target="#carousel-portfolio" data-slide-to="1"></li>
+												<li data-target="#carousel-portfolio" data-slide-to="2"></li>
+												<li data-target="#carousel-portfolio" data-slide-to="3"></li>
+												<li data-target="#carousel-portfolio" data-slide-to="4"></li>
+												
+												
+												
+												
+											</ol>
+													<div class="carousel-inner" role="listbox">
+												<div class="item active">
+													<div class="overlay-container">
+														<img src="images/a1.jpg" alt="">
+														<a class="overlay-link popup-img-single" href="images/a1.jpg"><i class="fa fa-search-plus"></i></a>
+														
+													</div>
+												</div>
+												<div class="item">
+													<div class="overlay-container">
+														<img src="images/a2.jpg" alt="">
+														<a class="overlay-link popup-img-single" href="images/a2.jpg"><i class="fa fa-search-plus"></i></a>
+														
+													</div>
+												</div>
+												<div class="item">
+													<div class="overlay-container">
+														<img src="images/a3.jpg" alt="">
+														<a class="overlay-link popup-img-single" href="images/a3.jpg"><i class="fa fa-search-plus"></i></a>
+														
+													</div>
+												</div>
+												<div class="item">
+													<div class="overlay-container">
+														<img src="images/a4.jpg" alt="">
+														<a class="overlay-link popup-img-single" href="images/a4.jpg"><i class="fa fa-search-plus"></i></a>
+														
+													</div>
+												</div>
+												<div class="item">
+													<div class="overlay-container">
+														<img src="images/a5.jpg" alt="">
+														<a class="overlay-link popup-img-single" href="images/a5.jpg"><i class="fa fa-search-plus"></i></a>
+														
+													</div>
+												</div>
+												
+												
+												
+											</div>
+
+
+												
 													
+												</div>
+												<div class="body">
+													<h3>Fuse Army Bi-Sitting</h3>
+													<span class="price"><del>$2,350.00</del> $2,159.00</span>
+													<p class="small"> </p>
+													Creative Electric Motors is created for anyone who wants to enjoy the style and the facility to drive a unique bike without gas, to preserve the world and the bio environment!
+													<div id='product-component-c0aeddca21a'></div>
+<script type="text/javascript">
+/*<![CDATA[*/
+
+(function () {
+  var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+  if (window.ShopifyBuy) {
+    if (window.ShopifyBuy.UI) {
+      ShopifyBuyInit();
+    } else {
+      loadScript();
+    }
+  } else {
+    loadScript();
+  }
+
+  function loadScript() {
+    var script = document.createElement('script');
+    script.async = true;
+    script.src = scriptURL;
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+    script.onload = ShopifyBuyInit;
+  }
+
+  function ShopifyBuyInit() {
+    var client = ShopifyBuy.buildClient({
+      domain: 'creative-electric-motors.myshopify.com',
+      apiKey: 'c512b33a62bb2bf65e735c6735fba00c',
+      appId: '6',
+    });
+
+    ShopifyBuy.UI.onReady(client).then(function (ui) {
+      ui.createComponent('product', {
+        id: [9892772292],
+        node: document.getElementById('product-component-c0aeddca21a'),
+        moneyFormat: '%24%7B%7Bamount%7D%7D',
+        options: {
+  "product": {
+    "buttonDestination": "modal",
+    "variantId": "all",
+    "width": "240px",
+    "contents": {
+      "img": false,
+      "title": false,
+      "variantTitle": false,
+      "options": false,
+      "price": false,
+      "description": false,
+      "buttonWithQuantity": false,
+      "quantity": false
+    },
+    "text": {
+      "button": "VIEW ARMY BI-SITTING"
+    },
+    "styles": {
+      "product": {
+        "@media (min-width: 601px)": {
+          "max-width": "100%",
+          "margin-left": "0",
+          "margin-bottom": "50px"
+        }
+      },
+      "button": {
+        "background-color": "#51c512",
+        "font-size": "15px",
+        "padding-top": "15.5px",
+        "padding-bottom": "15.5px",
+        ":hover": {
+          "background-color": "#49b110"
+        },
+        ":focus": {
+          "background-color": "#49b110"
+        }
+      },
+      "quantityInput": {
+        "font-size": "15px",
+        "padding-top": "15.5px",
+        "padding-bottom": "15.5px"
+      },
+      "compareAt": {
+        "font-size": "12px"
+      }
+    }
+  },
+  "cart": {
+    "contents": {
+      "button": true
+    },
+    "styles": {
+      "button": {
+        "background-color": "#51c512",
+        "font-size": "15px",
+        "padding-top": "15.5px",
+        "padding-bottom": "15.5px",
+        ":hover": {
+          "background-color": "#49b110"
+        },
+        ":focus": {
+          "background-color": "#49b110"
+        }
+      },
+      "footer": {
+        "background-color": "#ffffff"
+      }
+    }
+  },
+  "modalProduct": {
+    "contents": {
+      "variantTitle": false,
+      "buttonWithQuantity": true,
+      "button": false,
+      "quantity": false
+    },
+    "styles": {
+      "product": {
+        "@media (min-width: 601px)": {
+          "max-width": "100%",
+          "margin-left": "0px",
+          "margin-bottom": "0px"
+        }
+      },
+      "button": {
+        "background-color": "#51c512",
+        "font-size": "15px",
+        "padding-top": "15.5px",
+        "padding-bottom": "15.5px",
+        ":hover": {
+          "background-color": "#49b110"
+        },
+        ":focus": {
+          "background-color": "#49b110"
+        }
+      },
+      "quantityInput": {
+        "font-size": "15px",
+        "padding-top": "15.5px",
+        "padding-bottom": "15.5px"
+      }
+    }
+  },
+  "toggle": {
+    "styles": {
+      "toggle": {
+        "background-color": "#51c512",
+        ":hover": {
+          "background-color": "#49b110"
+        },
+        ":focus": {
+          "background-color": "#49b110"
+        }
+      },
+      "count": {
+        "font-size": "15px"
+      }
+    }
+  },
+  "productSet": {
+    "styles": {
+      "products": {
+        "@media (min-width: 601px)": {
+          "margin-left": "-20px"
+        }
+      }
+    }
+  }
+}
+      });
+    });
+  }
+})();
+/*]]>*/
+</script>
+		
+													</div>
+													</div>
+												</div>
+											</div><br><br><br><br>
+						<div class="col-md-3 col-sm-6 masonry-grid-item">
+											<div class="listing-item white-bg bordered mb-20">
+												<div class="overlay-container">
+													<div id="carousel-portfolio" class="carousel slide" data-ride="carousel">
+											<!-- Indicators -->
+											<ol class="carousel-indicators top">
+												<li data-target="#carousel-portfolio" data-slide-to="0" class="active"></li>
+												<li data-target="#carousel-portfolio" data-slide-to="1"></li>
+												<li data-target="#carousel-portfolio" data-slide-to="2"></li>
+												<li data-target="#carousel-portfolio" data-slide-to="3"></li>
+												<li data-target="#carousel-portfolio" data-slide-to="4"></li>
+												<li data-target="#carousel-portfolio" data-slide-to="5"></li>
+												<li data-target="#carousel-portfolio" data-slide-to="6"></li>
+												
+												
+												
+												
+											</ol>
+													<div class="carousel-inner" role="listbox">
+												<div class="item active">
+													<div class="overlay-container">
+														<img src="images/rr1.jpg" alt="">
+														<a class="overlay-link popup-img-single" href="images/rr1.jpg"><i class="fa fa-search-plus"></i></a>
+														
+													</div>
+												</div>
+												<div class="item">
+													<div class="overlay-container">
+														<img src="images/rr2.jpg" alt="">
+														<a class="overlay-link popup-img-single" href="images/rr2.jpg"><i class="fa fa-search-plus"></i></a>
+														
+													</div>
+												</div>
+												<div class="item">
+													<div class="overlay-container">
+														<img src="images/rr3.jpg" alt="">
+														<a class="overlay-link popup-img-single" href="images/rr3.jpg"><i class="fa fa-search-plus"></i></a>
+														
+													</div>
+												</div>
+												<div class="item">
+													<div class="overlay-container">
+														<img src="images/rr4.jpg" alt="">
+														<a class="overlay-link popup-img-single" href="images/rr4.jpg"><i class="fa fa-search-plus"></i></a>
+														
+													</div>
+												</div>
+												<div class="item">
+													<div class="overlay-container">
+														<img src="images/rr5.jpg" alt="">
+														<a class="overlay-link popup-img-single" href="images/rr5.jpg"><i class="fa fa-search-plus"></i></a>
+														
+													</div>
+												</div>
+												<div class="item">
+													<div class="overlay-container">
+														<img src="images/rr6.jpg" alt="">
+														<a class="overlay-link popup-img-single" href="images/rr6.jpg"><i class="fa fa-search-plus"></i></a>
+														
+													</div>
+												</div>
+												<div class="item">
+													<div class="overlay-container">
+														<img src="images/rr7.jpg" alt="">
+														<a class="overlay-link popup-img-single" href="images/rr7.jpg"><i class="fa fa-search-plus"></i></a>
+														
+													</div>
+												</div>
+												
+												
+												
+											</div>
+
+
+												
+													
+												</div>
+												<div class="body">
+													<h3>Fuse Retro Bi-Sitting</h3>
+													<span class="price"><del>$2,350.00</del> $2,169.00</span>
+													<p class="small"> </p>
+													Creative Electric Motors is created for anyone who wants to enjoy the style and the facility to drive a unique bike without gas, to preserve the world and the bio environment!
+													<div id='product-component-63e588bbc9c'></div>
+<script type="text/javascript">
+/*<![CDATA[*/
+
+(function () {
+  var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+  if (window.ShopifyBuy) {
+    if (window.ShopifyBuy.UI) {
+      ShopifyBuyInit();
+    } else {
+      loadScript();
+    }
+  } else {
+    loadScript();
+  }
+
+  function loadScript() {
+    var script = document.createElement('script');
+    script.async = true;
+    script.src = scriptURL;
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+    script.onload = ShopifyBuyInit;
+  }
+
+  function ShopifyBuyInit() {
+    var client = ShopifyBuy.buildClient({
+      domain: 'creative-electric-motors.myshopify.com',
+      apiKey: 'c512b33a62bb2bf65e735c6735fba00c',
+      appId: '6',
+    });
+
+    ShopifyBuy.UI.onReady(client).then(function (ui) {
+      ui.createComponent('product', {
+        id: [9892812164],
+        node: document.getElementById('product-component-63e588bbc9c'),
+        moneyFormat: '%24%7B%7Bamount%7D%7D',
+        options: {
+  "product": {
+    "buttonDestination": "modal",
+    "variantId": "all",
+    "width": "240px",
+    "contents": {
+      "img": false,
+      "title": false,
+      "variantTitle": false,
+      "options": false,
+      "price": false,
+      "description": false,
+      "buttonWithQuantity": false,
+      "quantity": false
+    },
+    "text": {
+      "button": "VIEW RETRO BI-SITTING"
+    },
+    "styles": {
+      "product": {
+        "@media (min-width: 601px)": {
+          "max-width": "100%",
+          "margin-left": "0",
+          "margin-bottom": "50px"
+        }
+      },
+      "button": {
+        "background-color": "#51c512",
+        "font-size": "14px",
+        "padding-top": "15px",
+        "padding-bottom": "15px",
+        ":hover": {
+          "background-color": "#49b110"
+        },
+        ":focus": {
+          "background-color": "#49b110"
+        }
+      },
+      "quantityInput": {
+        "font-size": "14px",
+        "padding-top": "15px",
+        "padding-bottom": "15px"
+      },
+      "compareAt": {
+        "font-size": "12px"
+      }
+    }
+  },
+  "cart": {
+    "contents": {
+      "button": true
+    },
+    "styles": {
+      "button": {
+        "background-color": "#51c512",
+        "font-size": "14px",
+        "padding-top": "15px",
+        "padding-bottom": "15px",
+        ":hover": {
+          "background-color": "#49b110"
+        },
+        ":focus": {
+          "background-color": "#49b110"
+        }
+      },
+      "footer": {
+        "background-color": "#ffffff"
+      }
+    }
+  },
+  "modalProduct": {
+    "contents": {
+      "variantTitle": false,
+      "buttonWithQuantity": true,
+      "button": false,
+      "quantity": false
+    },
+    "styles": {
+      "product": {
+        "@media (min-width: 601px)": {
+          "max-width": "100%",
+          "margin-left": "0px",
+          "margin-bottom": "0px"
+        }
+      },
+      "button": {
+        "background-color": "#51c512",
+        "font-size": "14px",
+        "padding-top": "15px",
+        "padding-bottom": "15px",
+        ":hover": {
+          "background-color": "#49b110"
+        },
+        ":focus": {
+          "background-color": "#49b110"
+        }
+      },
+      "quantityInput": {
+        "font-size": "14px",
+        "padding-top": "15px",
+        "padding-bottom": "15px"
+      }
+    }
+  },
+  "toggle": {
+    "styles": {
+      "toggle": {
+        "background-color": "#51c512",
+        ":hover": {
+          "background-color": "#49b110"
+        },
+        ":focus": {
+          "background-color": "#49b110"
+        }
+      },
+      "count": {
+        "font-size": "14px"
+      }
+    }
+  },
+  "productSet": {
+    "styles": {
+      "products": {
+        "@media (min-width: 601px)": {
+          "margin-left": "-20px"
+        }
+      }
+    }
+  }
+}
+      });
+    });
+  }
+})();
+/*]]>*/
+</script>
 		
 													</div>
 													</div>
@@ -813,7 +1549,7 @@
 											</div>
 
 
-														
+						<br><br><br><br>								
 
 
 
@@ -831,7 +1567,7 @@
 			<!-- section end -->
 						<!-- section start -->
 			<!-- ================ -->
-			<div class="section pv-40 parallax default-translucent-bg background-img-7">
+			<div id="why"class="section pv-40 parallax default-translucent-bg background-img-7">
 				<div class="container">
 					<div class="row">
 						<div class="col-md-12">

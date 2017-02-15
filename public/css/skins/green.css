@@ -42,7 +42,7 @@ mark,
 -------------------------------------------------
 -------------------------------------------------*/
 .header-top.dark {
-  background-color: #303631;
+  background-color: #F1F1F1;
   border-bottom: 1px solid #242824;
 }
 .header.dark {
@@ -682,7 +682,7 @@ header:not(.dark) .dropdown-menu > li.active > a i {
 }
 .header-top.colored .social-links .dropdown > button > i:before,
 .header-top.colored .social-links .dropdown.open > button > i:before {
-  color: #ffffff;
+  color: #000000;
 }
 .dark.header-top .dropdown-menu {
   border: 1px solid #242824;

@@ -734,7 +734,7 @@ tbody {
   background: url("../images/nyc.jpg") 50% 0px no-repeat;
 }
 .background-img-8 {
-  background: url("../images/background-img-8.jpg") 50% 0px no-repeat;
+  background: url("../images/green.jpg") 50% 0px no-repeat;
 }
 .background-img-9 {
   background: url("../images/background-img-9.jpg") 50% 0px no-repeat;
@@ -1607,7 +1607,7 @@ h5 + .separator {
 }
 .header-top.dark,
 .header-top.colored {
-  color: #000000;
+  color: #ffffff;
 }
 .header-top.colored a {
   color: #ffffff;

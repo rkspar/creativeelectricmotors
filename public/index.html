@@ -2032,7 +2032,9 @@
 				</div>
 			</div>
 			<!-- footer top end -->
-			<div style='overflow:hidden;height:440px;width:100%;'><div id='gmap_canvas' style='height:440px;width:100%;'></div><div><small><a href="http://embedgooglemaps.com">embed google maps</a></small></div><div><small><a href="http://phplinkdir.com/">link directory</a></small></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div>
+			<div class="col-md-12">
+												<div id="map-canvas"></div>
+											</div>
 			<!-- footer start (Add "dark" class to #footer in order to enable dark footer) -->
 			<!-- ================ -->
 			<footer id="footer" class="clearfix dark">
@@ -2115,8 +2117,11 @@ BIKE SPECIALIST ESTIMATE CREATIVE ELECTRIC MOTORS AS PIONEER OF E-BIKE IN THE WO
 	<script type="text/javascript" src="plugins/rs-plugin-5/js/extensions/revolution.extension.slideanims.min.js"></script>
 	<script type="text/javascript" src="plugins/rs-plugin-5/js/extensions/revolution.extension.layeranimation.min.js"></script>
 	<script type="text/javascript" src="plugins/rs-plugin-5/js/extensions/revolution.extension.navigation.min.js"></script>
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false&amp;signed_in=true"></script>
+	
+	<script type="text/javascript" src="js/google.map.config.js"></script>
+</script>
 
-	<script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
-	<script type='text/javascript'>function init_map(){var myOptions = {zoom:10,center:new google.maps.LatLng(25.7747969,-80.13527149999999),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(25.7747969,-80.13527149999999)});infowindow = new google.maps.InfoWindow({content:'<strong>Creative Electric Motors</strong><br>713 5th Street Miami Beach, FL 33130<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+	
 	</body>
 </html>

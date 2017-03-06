@@ -56,7 +56,7 @@ function initDefaults() {
       }()),
       map: {
         mapTypeId : gm.MapTypeId.ROADMAP,
-        center: [46.578498, 2.457275],
+        center: [25.775058, -80.135261],
         zoom: 2
       },
       overlay: {

@@ -2995,7 +2995,7 @@ body.off-canvas-cart-open:after {
 /* Link & Text colors */
 
 .inner-nav > li > a {
-    color: #999;
+    color: #000;
     -webkit-transition: all 0.3s ease-out;
             transition: all 0.3s ease-out;
 }

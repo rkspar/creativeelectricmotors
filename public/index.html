@@ -68,7 +68,7 @@
 		
 			<!-- MAIN MENU -->
 			<nav id="custom-collapse" class="main-nav collapse clearfix">
-				<ul class="inner-nav pull-right">
+				<ul class="inner-nav onepage-nav pull-right">
 		
 					<!-- HOME -->
 					<li><a href="index.html"><b>Home</b></a></li>
@@ -118,10 +118,769 @@
 						<h5 class="montserrat text-uppercase bottom-line">Shop</h5>
 						<!-- BOX CAROUSEL -->
 						<div class="box-carousel" data-carousel-options='{"items":"2", "navigation": true}'>
+              <div class="item">
+                <div class="box-icon-left">
+                  <img src="assets/images/black.jpg">
+                  <center><div id='product-component-832015eb2c2'></div>
+<script type="text/javascript">
+/*<![CDATA[*/
+
+(function () {
+  var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+  if (window.ShopifyBuy) {
+    if (window.ShopifyBuy.UI) {
+      ShopifyBuyInit();
+    } else {
+      loadScript();
+    }
+  } else {
+    loadScript();
+  }
+
+  function loadScript() {
+    var script = document.createElement('script');
+    script.async = true;
+    script.src = scriptURL;
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+    script.onload = ShopifyBuyInit;
+  }
+
+  function ShopifyBuyInit() {
+    var client = ShopifyBuy.buildClient({
+      domain: 'creative-electric-motors.myshopify.com',
+      apiKey: 'c512b33a62bb2bf65e735c6735fba00c',
+      appId: '6',
+    });
+
+    ShopifyBuy.UI.onReady(client).then(function (ui) {
+      ui.createComponent('product', {
+        id: [10033161604],
+        node: document.getElementById('product-component-832015eb2c2'),
+        moneyFormat: '%24%7B%7Bamount%7D%7D',
+        options: {
+  "product": {
+    "buttonDestination": "modal",
+    "variantId": "all",
+    "width": "240px",
+    "contents": {
+      "img": false,
+      "imgWithCarousel": false,
+      "title": false,
+      "variantTitle": false,
+      "options": false,
+      "price": false,
+      "description": false,
+      "buttonWithQuantity": false,
+      "quantity": false
+    },
+    "text": {
+      "button": "ELECTRIC CLASSIC"
+    },
+    "styles": {
+      "product": {
+        "@media (min-width: 601px)": {
+          "max-width": "100%",
+          "margin-left": "0",
+          "margin-bottom": "50px"
+        }
+      },
+      "button": {
+        "background-color": "#001724",
+        "font-size": "13px",
+        "padding-top": "14.5px",
+        "padding-bottom": "14.5px",
+        "padding-left": "30px",
+        "padding-right": "30px",
+        ":hover": {
+          "background-color": "#00273d"
+        },
+        "border-radius": "15px",
+        ":focus": {
+          "background-color": "#00273d"
+        }
+      },
+      "quantityInput": {
+        "font-size": "13px",
+        "padding-top": "14.5px",
+        "padding-bottom": "14.5px"
+      },
+      "compareAt": {
+        "font-size": "12px"
+      }
+    }
+  },
+  "cart": {
+    "contents": {
+      "button": true
+    },
+    "styles": {
+      "button": {
+        "background-color": "#001724",
+        "font-size": "13px",
+        "padding-top": "14.5px",
+        "padding-bottom": "14.5px",
+        ":hover": {
+          "background-color": "#00273d"
+        },
+        "border-radius": "15px",
+        ":focus": {
+          "background-color": "#00273d"
+        }
+      },
+      "title": {
+        "color": "#000000"
+      },
+      "footer": {
+        "background-color": "#ffffff"
+      },
+      "header": {
+        "color": "#000000"
+      },
+      "lineItems": {
+        "color": "#000000"
+      },
+      "subtotalText": {
+        "color": "#000000"
+      },
+      "subtotal": {
+        "color": "#000000"
+      },
+      "notice": {
+        "color": "#000000"
+      },
+      "currency": {
+        "color": "#000000"
+      },
+      "close": {
+        ":hover": {
+          "color": "#000000"
+        },
+        "color": "#000000"
+      },
+      "emptyCart": {
+        "color": "#000000"
+      }
+    }
+  },
+  "modalProduct": {
+    "contents": {
+      "img": false,
+      "imgWithCarousel": true,
+      "variantTitle": false,
+      "buttonWithQuantity": true,
+      "button": false,
+      "quantity": false
+    },
+    "styles": {
+      "product": {
+        "@media (min-width: 601px)": {
+          "max-width": "100%",
+          "margin-left": "0px",
+          "margin-bottom": "0px"
+        }
+      },
+      "button": {
+        "background-color": "#001724",
+        "font-size": "13px",
+        "padding-top": "14.5px",
+        "padding-bottom": "14.5px",
+        "padding-left": "30px",
+        "padding-right": "30px",
+        ":hover": {
+          "background-color": "#00273d"
+        },
+        "border-radius": "15px",
+        ":focus": {
+          "background-color": "#00273d"
+        }
+      },
+      "quantityInput": {
+        "font-size": "13px",
+        "padding-top": "14.5px",
+        "padding-bottom": "14.5px"
+      }
+    }
+  },
+  "toggle": {
+    "styles": {
+      "toggle": {
+        "background-color": "#001724",
+        ":hover": {
+          "background-color": "#00273d"
+        },
+        ":focus": {
+          "background-color": "#00273d"
+        }
+      },
+      "count": {
+        "font-size": "13px",
+        "color": "#ffffff",
+        ":hover": {
+          "color": "#ffffff"
+        }
+      },
+      "iconPath": {
+        "fill": "#ffffff"
+      }
+    }
+  },
+  "productSet": {
+    "styles": {
+      "products": {
+        "@media (min-width: 601px)": {
+          "margin-left": "-20px"
+        }
+      }
+    }
+  },
+  "lineItem": {
+    "styles": {
+      "variantTitle": {
+        "color": "#000000"
+      },
+      "title": {
+        "color": "#000000"
+      },
+      "price": {
+        "color": "#000000"
+      },
+      "quantity": {
+        "color": "#000000"
+      },
+      "quantityIncrement": {
+        "color": "#000000",
+        "border-color": "#000000"
+      },
+      "quantityDecrement": {
+        "color": "#000000",
+        "border-color": "#000000"
+      },
+      "quantityInput": {
+        "color": "#000000",
+        "border-color": "#000000"
+      }
+    }
+  }
+}
+      });
+    });
+  }
+})();
+/*]]>*/
+</script>
+                  <b> $1,495.00</b></center>
+                </div>
+              </div>
+              <div class="item">
+                <div class="box-icon-left">
+                  <img src="assets/images/white.jpg">
+                  <center><div id='product-component-f8602c1bcbc'></div>
+<script type="text/javascript">
+/*<![CDATA[*/
+
+(function () {
+  var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+  if (window.ShopifyBuy) {
+    if (window.ShopifyBuy.UI) {
+      ShopifyBuyInit();
+    } else {
+      loadScript();
+    }
+  } else {
+    loadScript();
+  }
+
+  function loadScript() {
+    var script = document.createElement('script');
+    script.async = true;
+    script.src = scriptURL;
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+    script.onload = ShopifyBuyInit;
+  }
+
+  function ShopifyBuyInit() {
+    var client = ShopifyBuy.buildClient({
+      domain: 'creative-electric-motors.myshopify.com',
+      apiKey: 'c512b33a62bb2bf65e735c6735fba00c',
+      appId: '6',
+    });
+
+    ShopifyBuy.UI.onReady(client).then(function (ui) {
+      ui.createComponent('product', {
+        id: [10033163588],
+        node: document.getElementById('product-component-f8602c1bcbc'),
+        moneyFormat: '%24%7B%7Bamount%7D%7D',
+        options: {
+  "product": {
+    "buttonDestination": "modal",
+    "variantId": "all",
+    "width": "240px",
+    "contents": {
+      "img": false,
+      "imgWithCarousel": false,
+      "title": false,
+      "variantTitle": false,
+      "options": false,
+      "price": false,
+      "description": false,
+      "buttonWithQuantity": false,
+      "quantity": false
+    },
+    "text": {
+      "button": "ELECTRIC DYNAMIC"
+    },
+    "styles": {
+      "product": {
+        "@media (min-width: 601px)": {
+          "max-width": "100%",
+          "margin-left": "0",
+          "margin-bottom": "50px"
+        }
+      },
+      "button": {
+        "background-color": "#001724",
+        "font-size": "13px",
+        "padding-top": "14.5px",
+        "padding-bottom": "14.5px",
+        "padding-left": "30px",
+        "padding-right": "30px",
+        ":hover": {
+          "background-color": "#00273d"
+        },
+        "border-radius": "15px",
+        ":focus": {
+          "background-color": "#00273d"
+        }
+      },
+      "quantityInput": {
+        "font-size": "13px",
+        "padding-top": "14.5px",
+        "padding-bottom": "14.5px"
+      },
+      "compareAt": {
+        "font-size": "12px"
+      }
+    }
+  },
+  "cart": {
+    "contents": {
+      "button": true
+    },
+    "styles": {
+      "button": {
+        "background-color": "#001724",
+        "font-size": "13px",
+        "padding-top": "14.5px",
+        "padding-bottom": "14.5px",
+        ":hover": {
+          "background-color": "#00273d"
+        },
+        "border-radius": "15px",
+        ":focus": {
+          "background-color": "#00273d"
+        }
+      },
+      "title": {
+        "color": "#000000"
+      },
+      "footer": {
+        "background-color": "#ffffff"
+      },
+      "header": {
+        "color": "#000000"
+      },
+      "lineItems": {
+        "color": "#000000"
+      },
+      "subtotalText": {
+        "color": "#000000"
+      },
+      "subtotal": {
+        "color": "#000000"
+      },
+      "notice": {
+        "color": "#000000"
+      },
+      "currency": {
+        "color": "#000000"
+      },
+      "close": {
+        ":hover": {
+          "color": "#000000"
+        },
+        "color": "#000000"
+      },
+      "emptyCart": {
+        "color": "#000000"
+      }
+    }
+  },
+  "modalProduct": {
+    "contents": {
+      "img": false,
+      "imgWithCarousel": true,
+      "variantTitle": false,
+      "buttonWithQuantity": true,
+      "button": false,
+      "quantity": false
+    },
+    "styles": {
+      "product": {
+        "@media (min-width: 601px)": {
+          "max-width": "100%",
+          "margin-left": "0px",
+          "margin-bottom": "0px"
+        }
+      },
+      "button": {
+        "background-color": "#001724",
+        "font-size": "13px",
+        "padding-top": "14.5px",
+        "padding-bottom": "14.5px",
+        "padding-left": "30px",
+        "padding-right": "30px",
+        ":hover": {
+          "background-color": "#00273d"
+        },
+        "border-radius": "15px",
+        ":focus": {
+          "background-color": "#00273d"
+        }
+      },
+      "quantityInput": {
+        "font-size": "13px",
+        "padding-top": "14.5px",
+        "padding-bottom": "14.5px"
+      }
+    }
+  },
+  "toggle": {
+    "styles": {
+      "toggle": {
+        "background-color": "#001724",
+        ":hover": {
+          "background-color": "#00273d"
+        },
+        ":focus": {
+          "background-color": "#00273d"
+        }
+      },
+      "count": {
+        "font-size": "13px",
+        "color": "#ffffff",
+        ":hover": {
+          "color": "#ffffff"
+        }
+      },
+      "iconPath": {
+        "fill": "#ffffff"
+      }
+    }
+  },
+  "productSet": {
+    "styles": {
+      "products": {
+        "@media (min-width: 601px)": {
+          "margin-left": "-20px"
+        }
+      }
+    }
+  },
+  "lineItem": {
+    "styles": {
+      "variantTitle": {
+        "color": "#000000"
+      },
+      "title": {
+        "color": "#000000"
+      },
+      "price": {
+        "color": "#000000"
+      },
+      "quantity": {
+        "color": "#000000"
+      },
+      "quantityIncrement": {
+        "color": "#000000",
+        "border-color": "#000000"
+      },
+      "quantityDecrement": {
+        "color": "#000000",
+        "border-color": "#000000"
+      },
+      "quantityInput": {
+        "color": "#000000",
+        "border-color": "#000000"
+      }
+    }
+  }
+}
+      });
+    });
+  }
+})();
+/*]]>*/
+</script>
+                  <b> $1,695.00</b></center>
+                </div>
+              </div>
+              <div class="item">
+                <div class="box-icon-left">
+                  <img src="assets/images/black2.jpg">
+                  <center><div id='product-component-8ed6db8a7bb'></div>
+<script type="text/javascript">
+/*<![CDATA[*/
+
+(function () {
+  var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+  if (window.ShopifyBuy) {
+    if (window.ShopifyBuy.UI) {
+      ShopifyBuyInit();
+    } else {
+      loadScript();
+    }
+  } else {
+    loadScript();
+  }
+
+  function loadScript() {
+    var script = document.createElement('script');
+    script.async = true;
+    script.src = scriptURL;
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+    script.onload = ShopifyBuyInit;
+  }
+
+  function ShopifyBuyInit() {
+    var client = ShopifyBuy.buildClient({
+      domain: 'creative-electric-motors.myshopify.com',
+      apiKey: 'c512b33a62bb2bf65e735c6735fba00c',
+      appId: '6',
+    });
+
+    ShopifyBuy.UI.onReady(client).then(function (ui) {
+      ui.createComponent('product', {
+        id: [10033188164],
+        node: document.getElementById('product-component-8ed6db8a7bb'),
+        moneyFormat: '%24%7B%7Bamount%7D%7D',
+        options: {
+  "product": {
+    "buttonDestination": "modal",
+    "variantId": "all",
+    "width": "240px",
+    "contents": {
+      "img": false,
+      "imgWithCarousel": false,
+      "title": false,
+      "variantTitle": false,
+      "options": false,
+      "price": false,
+      "description": false,
+      "buttonWithQuantity": false,
+      "quantity": false
+    },
+    "text": {
+      "button": "SUPER ELECTRIC"
+    },
+    "styles": {
+      "product": {
+        "@media (min-width: 601px)": {
+          "max-width": "100%",
+          "margin-left": "0",
+          "margin-bottom": "50px"
+        }
+      },
+      "button": {
+        "background-color": "#001724",
+        "font-size": "13px",
+        "padding-top": "14.5px",
+        "padding-bottom": "14.5px",
+        "padding-left": "30px",
+        "padding-right": "30px",
+        ":hover": {
+          "background-color": "#00273d"
+        },
+        "border-radius": "15px",
+        ":focus": {
+          "background-color": "#00273d"
+        }
+      },
+      "quantityInput": {
+        "font-size": "13px",
+        "padding-top": "14.5px",
+        "padding-bottom": "14.5px"
+      },
+      "compareAt": {
+        "font-size": "12px"
+      }
+    }
+  },
+  "cart": {
+    "contents": {
+      "button": true
+    },
+    "styles": {
+      "button": {
+        "background-color": "#001724",
+        "font-size": "13px",
+        "padding-top": "14.5px",
+        "padding-bottom": "14.5px",
+        ":hover": {
+          "background-color": "#00273d"
+        },
+        "border-radius": "15px",
+        ":focus": {
+          "background-color": "#00273d"
+        }
+      },
+      "title": {
+        "color": "#000000"
+      },
+      "footer": {
+        "background-color": "#ffffff"
+      },
+      "header": {
+        "color": "#000000"
+      },
+      "lineItems": {
+        "color": "#000000"
+      },
+      "subtotalText": {
+        "color": "#000000"
+      },
+      "subtotal": {
+        "color": "#000000"
+      },
+      "notice": {
+        "color": "#000000"
+      },
+      "currency": {
+        "color": "#000000"
+      },
+      "close": {
+        ":hover": {
+          "color": "#000000"
+        },
+        "color": "#000000"
+      },
+      "emptyCart": {
+        "color": "#000000"
+      }
+    }
+  },
+  "modalProduct": {
+    "contents": {
+      "img": false,
+      "imgWithCarousel": true,
+      "variantTitle": false,
+      "buttonWithQuantity": true,
+      "button": false,
+      "quantity": false
+    },
+    "styles": {
+      "product": {
+        "@media (min-width: 601px)": {
+          "max-width": "100%",
+          "margin-left": "0px",
+          "margin-bottom": "0px"
+        }
+      },
+      "button": {
+        "background-color": "#001724",
+        "font-size": "13px",
+        "padding-top": "14.5px",
+        "padding-bottom": "14.5px",
+        "padding-left": "30px",
+        "padding-right": "30px",
+        ":hover": {
+          "background-color": "#00273d"
+        },
+        "border-radius": "15px",
+        ":focus": {
+          "background-color": "#00273d"
+        }
+      },
+      "quantityInput": {
+        "font-size": "13px",
+        "padding-top": "14.5px",
+        "padding-bottom": "14.5px"
+      }
+    }
+  },
+  "toggle": {
+    "styles": {
+      "toggle": {
+        "background-color": "#001724",
+        ":hover": {
+          "background-color": "#00273d"
+        },
+        ":focus": {
+          "background-color": "#00273d"
+        }
+      },
+      "count": {
+        "font-size": "13px",
+        "color": "#ffffff",
+        ":hover": {
+          "color": "#ffffff"
+        }
+      },
+      "iconPath": {
+        "fill": "#ffffff"
+      }
+    }
+  },
+  "productSet": {
+    "styles": {
+      "products": {
+        "@media (min-width: 601px)": {
+          "margin-left": "-20px"
+        }
+      }
+    }
+  },
+  "lineItem": {
+    "styles": {
+      "variantTitle": {
+        "color": "#000000"
+      },
+      "title": {
+        "color": "#000000"
+      },
+      "price": {
+        "color": "#000000"
+      },
+      "quantity": {
+        "color": "#000000"
+      },
+      "quantityIncrement": {
+        "color": "#000000",
+        "border-color": "#000000"
+      },
+      "quantityDecrement": {
+        "color": "#000000",
+        "border-color": "#000000"
+      },
+      "quantityInput": {
+        "color": "#000000",
+        "border-color": "#000000"
+      }
+    }
+  }
+}
+      });
+    });
+  }
+})();
+/*]]>*/
+</script>
+                  <b> $1,895.00</b></center>
+                </div>
+              </div>
 							<div class="item">
 								<div class="box-icon-left">
 									<img src="assets/images/graf.png">
-									<center><div id='product-component-07bf12717b1'></div>
+									<center><div id='product-component-1b5d8d7b95c'></div>
 <script type="text/javascript">
 /*<![CDATA[*/
 
@@ -155,7 +914,7 @@
     ShopifyBuy.UI.onReady(client).then(function (ui) {
       ui.createComponent('product', {
         id: [9868819012],
-        node: document.getElementById('product-component-07bf12717b1'),
+        node: document.getElementById('product-component-1b5d8d7b95c'),
         moneyFormat: '%24%7B%7Bamount%7D%7D',
         options: {
   "product": {
@@ -174,7 +933,7 @@
       "quantity": false
     },
     "text": {
-      "button": "FUSE GRAFITTI"
+      "button": "ELECTRIC GRAFITTI S"
     },
     "styles": {
       "product": {
@@ -374,7 +1133,7 @@
 							<div class="item">
 								<div class="box-icon-left">
 									<img src="assets/images/r7.jpg">
-									<center><div id='product-component-f9936c0d70e'></div>
+									<center><div id='product-component-c83a74aaabc'></div>
 <script type="text/javascript">
 /*<![CDATA[*/
 
@@ -408,7 +1167,7 @@
     ShopifyBuy.UI.onReady(client).then(function (ui) {
       ui.createComponent('product', {
         id: [9870756356],
-        node: document.getElementById('product-component-f9936c0d70e'),
+        node: document.getElementById('product-component-c83a74aaabc'),
         moneyFormat: '%24%7B%7Bamount%7D%7D',
         options: {
   "product": {
@@ -427,7 +1186,7 @@
       "quantity": false
     },
     "text": {
-      "button": "FUSE RETRO"
+      "button": "ELECTRIC RETRO"
     },
     "styles": {
       "product": {
@@ -627,7 +1386,7 @@
 							<div class="item">
 								<div class="box-icon-left">
 									<img src="assets/images/chopper2.jpg">
-									<center>	<div id='product-component-e6c15f977c0'></div>
+									<center>	<div id='product-component-bd5220c6f54'></div>
 <script type="text/javascript">
 /*<![CDATA[*/
 
@@ -661,7 +1420,7 @@
     ShopifyBuy.UI.onReady(client).then(function (ui) {
       ui.createComponent('product', {
         id: [9892732292],
-        node: document.getElementById('product-component-e6c15f977c0'),
+        node: document.getElementById('product-component-bd5220c6f54'),
         moneyFormat: '%24%7B%7Bamount%7D%7D',
         options: {
   "product": {
@@ -680,7 +1439,7 @@
       "quantity": false
     },
     "text": {
-      "button": "FUSE CHOPPER"
+      "button": "SOLD OUT |ELECTRIC CHOPPER| SOLDOUT"
     },
     "styles": {
       "product": {
@@ -880,7 +1639,7 @@
 							<div class="item">
 								<div class="box-icon-left">
 									<img src="assets/images/army.png">
-									<center><div id='product-component-87e8bc14288'></div>
+									<center><div id='product-component-b2060a16c93'></div>
 <script type="text/javascript">
 /*<![CDATA[*/
 
@@ -914,7 +1673,7 @@
     ShopifyBuy.UI.onReady(client).then(function (ui) {
       ui.createComponent('product', {
         id: [9892772292],
-        node: document.getElementById('product-component-87e8bc14288'),
+        node: document.getElementById('product-component-b2060a16c93'),
         moneyFormat: '%24%7B%7Bamount%7D%7D',
         options: {
   "product": {
@@ -933,7 +1692,7 @@
       "quantity": false
     },
     "text": {
-      "button": "FUSE ARMY BI-SITTING"
+      "button": "ELECTRIC ARMY BI-SITTING"
     },
     "styles": {
       "product": {
@@ -1133,7 +1892,7 @@
 							<div class="item">
 								<div class="box-icon-left">
 									<img src="assets/images/rr1.jpg">
-									<center><div id='product-component-5aa2f33d8c3'></div>
+									<center><div id='product-component-f1d0ab4e894'></div>
 <script type="text/javascript">
 /*<![CDATA[*/
 
@@ -1167,7 +1926,7 @@
     ShopifyBuy.UI.onReady(client).then(function (ui) {
       ui.createComponent('product', {
         id: [9892812164],
-        node: document.getElementById('product-component-5aa2f33d8c3'),
+        node: document.getElementById('product-component-f1d0ab4e894'),
         moneyFormat: '%24%7B%7Bamount%7D%7D',
         options: {
   "product": {
@@ -1186,7 +1945,7 @@
       "quantity": false
     },
     "text": {
-      "button": "FUSE RETRO BI-SITTING"
+      "button": "ELECTRIC RETRO BI-SITTING"
     },
     "styles": {
       "product": {
